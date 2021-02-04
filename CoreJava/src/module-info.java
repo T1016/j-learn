@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author tarfaasima
+ *
+ */
+module coreJava {
+}
