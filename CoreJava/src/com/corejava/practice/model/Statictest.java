@@ -12,9 +12,9 @@ public class Statictest {
 		// fill the staff array with three Employee objects
 		var staff = new Employee[3];
 
-		staff[0] = new Employee("Tom", 40000);
-		staff[1] = new Employee("Dick", 60000);
-		staff[2] = new Employee("Harry", 65000);
+		staff[0] = new Employee("Paul", 100000);
+		staff[1] = new Employee("Marc", 800000);
+		staff[2] = new Employee("Ralph", 70000);
 
 		// print out information about all Employee objects
 		for (Employee e : staff) {
@@ -22,14 +22,15 @@ public class Statictest {
 			e.setId();
 			System.out.println("name=" + e.getName() + ",id=" + e.getId() + "" + e.getSalary());
 		}
-		int n = Employee.getNextId(); // calls static method
+		int n = Employee.getNextId(); 
+		// calls static method
 		System.out.println("Next available id=" + n);
 	}
 }
 
 class Employee {
+	
 	private static int nextId = 1;
-
 	private String name;
 	private double salary;
 	private int id;
@@ -63,7 +64,7 @@ class Employee {
 
 	public static void main(String[] args) // unit test
 	{
-		var e = new Employee("Harry", 50000);
+		var e = new Employee("Ralph", 70000);
 		System.out.println(e.getName() + " " + e.getSalary());
 	}
 }
