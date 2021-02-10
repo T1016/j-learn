@@ -62,9 +62,9 @@ class Employee {
 		return nextId; // returns static field
 	}
 
-	public static void main(String[] args) // unit test
-	{
-		var e = new Employee("Ralph", 70000);
-		System.out.println(e.getName() + " " + e.getSalary());
-	}
+//	public static void main(String[] args) // unit test
+//	{
+//		var e = new Employee("Ralph", 70000);
+//		System.out.println(e.getName() + " " + e.getSalary());
+//	}
 }
